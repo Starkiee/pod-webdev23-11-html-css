@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration-form.css">
+  </head>
+  <body>
+      <div class="content">
+        <h1 id="title">Registration Form</h1>
+        <p id="description">Provide the details asked below and submit the form</p>
+        <hr>
+        <form id="survey-form">
+          <fieldset>
+            <label id="name-label" for="name">Full Name: <input id="name" type="text" class="block" placeholder="Monkey D Luffy" required></label>
+            <label id="email-label" for="email">Email Address: <input id="email" type="email" class="block" placeholder="zoro123@gmail.com" required> </label>
+            <label id="number-label" for="number">Age: <input id="number" type="number" class="block" placeholder="23" >
+            <div class="block">
+              <label class="block2">Sex: </label>
+              <label for="male"><input id="male" type="radio" name="sex" value="male" checked> Male</label>
+              <label for="female"><input id="female" type="radio" value="female" name="sex">Female</label>
+              <label for="transgender"><input id="transgender" type="radio" value="transgender" name="sex">Transgender</label>
+              <label for="not-to-say"><input id="not-to-say" type="radio" value="not-to-say" name="sex">Prefer not to say</label>
+              </div>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <div class=block>
+              <label for="fav" class="block2">Favourite Animes:  </label>
+              <input id="fav" type="checkbox" value="anime" name="fav-anime" checked>One Piece
+              <input id="fav" type="checkbox" value="anime" name="fav-anime">Dragon Ball Z
+              <input id="fav" type="checkbox" value="anime" name="fav-anime">Shingeki no Kyojin
+              <input id="fav" type="checkbox" value="anime" name="fav-anime">Death Note
+            </div>
+            <div class="block" >
+              <label for="dropdown" class="block2" >What genre do you prefer ?</label>
+              <select id="dropdown">
+                <option>(select one)</option>
+                <option>Adventure</option>
+                <option>Action</option>
+                <option>Romance</option>
+                <option>Comedy</option>
+                <option>Horror</option>
+              </select>
+            </div>
+         </fieldset>
+         <hr>
+         <fieldset>
+           <div class="block">
+             <label for="comments">Describe your experience<textarea type="text" rows="3" class="block" cols="40" id="comments" placeholder="I loved the plot in One piece"></textarea></label>
+             <label class="button"><button type="submit" id="submit" value="Submit">Submit</label>
+           </div>
+         </fieldset>
+         <hr>
+         <footer>
+           <p>Thank you for visiting our page</p>
+           </footer>
+    </div>
+  </body>
+</html>
